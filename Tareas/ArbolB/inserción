@@ -21,25 +21,7 @@ BTreeNode * init(){
         np->child_ptr[i] = NULL;
     }
     return np;
-}/*
-void traverse(BTreeNode *p)
-{
-    cout<<endl;
-    int i;
-    for (i = 0; i < p->n; i++)
-    {
-        if (p->leaf == false)
-        {
-            traverse(p->child_ptr[i]);
-        }
-        cout << " " << p->data[i];
-    }
-    if (p->leaf == false)
-    {
-        traverse(p->child_ptr[i]);
-    }
-    cout<<endl;
-}*/
+}
 void sort(int *p, int n)
 {
     int i, j, temp;
